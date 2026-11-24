@@ -1,0 +1,22 @@
+{
+  "model": "MobileNetV2 Binary Classifier (Stage 1 Potato Leaf Validator)",
+  "accuracy": 0.9817,
+  "false_acceptance_rate": 0.0,
+  "false_rejection_rate": 0.0341,
+  "potato_precision": 1.0,
+  "potato_recall": 0.9659,
+  "non_potato_precision": 0.962,
+  "non_potato_recall": 1.0,
+  "confusion_matrix": [
+    [
+      85,
+      3
+    ],
+    [
+      0,
+      76
+    ]
+  ],
+  "total_test_samples": 164,
+  "decision_threshold": 0.5
+}

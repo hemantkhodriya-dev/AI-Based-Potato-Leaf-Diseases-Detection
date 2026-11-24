@@ -1,0 +1,164 @@
+{
+  "selected_method": "Temperature Scaling (Validation Calibrated)",
+  "optimal_temperature": 4.0,
+  "temperature": 4.0,
+  "target_range": [
+    0.6,
+    0.96
+  ],
+  "validation_samples": 323,
+  "test_samples": 323,
+  "raw_metrics": {
+    "accuracy": 0.9907,
+    "mean_confidence": 0.9789,
+    "median_confidence": 0.9997,
+    "min_confidence": 0.5043,
+    "max_confidence": 1.0,
+    "pct_in_60_96_range": 4.33,
+    "ece": 0.0126,
+    "brier_score": 0.0177,
+    "nll": 0.0302
+  },
+  "calibrated_metrics": {
+    "accuracy": 0.9907,
+    "mean_confidence": 0.8197,
+    "median_confidence": 0.8485,
+    "min_confidence": 0.41,
+    "max_confidence": 0.9963,
+    "percentile_25": 0.7512,
+    "percentile_75": 0.914,
+    "pct_in_60_96_range": 83.59,
+    "ece": 0.171,
+    "brier_score": 0.079,
+    "nll": 0.2142
+  },
+  "reliability_diagram": [
+    {
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "count": 0,
+      "accuracy": 0.0,
+      "confidence": 0.05,
+      "error": 0.0
+    },
+    {
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "count": 0,
+      "accuracy": 0.0,
+      "confidence": 0.15,
+      "error": 0.0
+    },
+    {
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "count": 0,
+      "accuracy": 0.0,
+      "confidence": 0.25,
+      "error": 0.0
+    },
+    {
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "count": 0,
+      "accuracy": 0.0,
+      "confidence": 0.35,
+      "error": 0.0
+    },
+    {
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "count": 12,
+      "accuracy": 0.75,
+      "confidence": 0.4589,
+      "error": 0.2911
+    },
+    {
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "count": 9,
+      "accuracy": 1.0,
+      "confidence": 0.5433,
+      "error": 0.4567
+    },
+    {
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "count": 38,
+      "accuracy": 1.0,
+      "confidence": 0.6625,
+      "error": 0.3375
+    },
+    {
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "count": 53,
+      "accuracy": 1.0,
+      "confidence": 0.7581,
+      "error": 0.2419
+    },
+    {
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "count": 106,
+      "accuracy": 1.0,
+      "confidence": 0.85,
+      "error": 0.15
+    },
+    {
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "count": 105,
+      "accuracy": 1.0,
+      "confidence": 0.9421,
+      "error": 0.0579
+    }
+  ],
+  "sample_predictions": {
+    "Healthy": {
+      "predicted": "Healthy",
+      "raw_confidence": 0.9992479085922241,
+      "calibrated_confidence": 0.8355624079704285,
+      "raw_distribution": {
+        "Early Blight": 0.0,
+        "Healthy": 0.9992,
+        "Late Blight": 0.0008
+      },
+      "calibrated_distribution": {
+        "Early Blight": 0.0261,
+        "Healthy": 0.8356,
+        "Late Blight": 0.1384
+      }
+    },
+    "Early Blight": {
+      "predicted": "Early Blight",
+      "raw_confidence": 0.9999997615814209,
+      "calibrated_confidence": 0.9685633778572083,
+      "raw_distribution": {
+        "Early Blight": 1.0,
+        "Healthy": 0.0,
+        "Late Blight": 0.0
+      },
+      "calibrated_distribution": {
+        "Early Blight": 0.9686,
+        "Healthy": 0.0093,
+        "Late Blight": 0.0221
+      }
+    },
+    "Late Blight": {
+      "predicted": "Late Blight",
+      "raw_confidence": 0.9999723434448242,
+      "calibrated_confidence": 0.9087673425674438,
+      "raw_distribution": {
+        "Early Blight": 0.0,
+        "Healthy": 0.0,
+        "Late Blight": 1.0
+      },
+      "calibrated_distribution": {
+        "Early Blight": 0.0655,
+        "Healthy": 0.0257,
+        "Late Blight": 0.9088
+      }
+    }
+  }
+}
