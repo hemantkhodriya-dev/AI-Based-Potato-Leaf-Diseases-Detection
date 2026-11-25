@@ -87,7 +87,7 @@ const upload = multer({
 app.get('/api/health', async (req, res) => {
   let aiHealth = { status: 'down', message: 'AI Service unreachable' };
   try {
-    const aiRes = await axios.get(`${AI_SERVICE_URL}/health`, { timeout: 3000 });
+    const aiRes = await axios.get(`${AI_SERVICE_URL}/health`, { timeout: 6000 });
     aiHealth = aiRes.data;
   } catch (err) {
     aiHealth = { status: 'offline', error: err.message };
@@ -132,7 +132,7 @@ app.post('/api/predictions', (req, res) => {
 
       const aiResponse = await axios.post(`${AI_SERVICE_URL}/predict`, formData, {
         headers: { ...formData.getHeaders() },
-        timeout: 15000
+        timeout: 6000
       });
 
       const {
