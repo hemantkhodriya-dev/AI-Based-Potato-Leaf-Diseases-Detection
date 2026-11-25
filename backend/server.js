@@ -152,7 +152,8 @@ app.post('/api/predictions', (req, res) => {
         rawProbabilities,
         isLeaf
       } = aiResponse.data;
-      const imageUrl = `/uploads/${fileName}`;
+      const imageBase64 = fs.readFileSync(filePath, { encoding: 'base64' });
+      const imageUrl = data:${req.file.mimetype};base64,${imageBase64};
 
       // Check if Stage 1 rejected (Non-potato plant or invalid object)
       const isRejected = (aiStatus === 'rejected') || (isPotatoLeaf === false) || (isLeaf === false) || (predictedClass === 'Unsupported Image') || (predictedClass === 'Not a Potato Leaf');
