@@ -8,3 +8,4 @@ uvicorn
 flask
 pillow
 gunicorn
+python-multipart
