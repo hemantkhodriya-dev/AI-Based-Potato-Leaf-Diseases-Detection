@@ -1,3 +1,5 @@
+import axios from 'axios';
+axios.defaults.baseURL = import.meta.env.VITE_API_URL || 'https://ai-based-potato-leaf-diseases-detection-3.onrender.com';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
