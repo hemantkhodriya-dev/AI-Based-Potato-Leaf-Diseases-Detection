@@ -2,3 +2,6 @@ tensorflow
 numpy
 fastapi
 uvicorn
+flask
+pillow
+gunicorn
