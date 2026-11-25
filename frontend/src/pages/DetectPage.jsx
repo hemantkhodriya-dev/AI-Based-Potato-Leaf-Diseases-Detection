@@ -119,7 +119,7 @@ export default function DetectPage() {
       });
 
       // Redirect to Result Page with complete diagnosis data
-      navigate('/result', { state: { prediction: response.data } });
+      navigate('/result', { state: { prediction: { ...response.data, imageUrl: previewUrl || response.data.imageUrl } } });
 
     } catch (err) {
       console.error('Prediction Upload Error:', err);
